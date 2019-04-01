@@ -2,7 +2,8 @@ package codes.som.anthony.oof4j.fizzbuzz.basic;
 
 public class BasicFizzBuzz implements Runnable {
     public static void main(String[] args) {
-        new BasicFizzBuzz().run();
+        Runnable application = new BasicFizzBuzz();
+        application.run();
     }
 
     // Since this method overrides java.lang.Runnable's run,

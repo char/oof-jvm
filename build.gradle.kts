@@ -12,13 +12,19 @@ repositories {
     mavenCentral()
 }
 
-for (sourceSetId in arrayOf(
-    "fizzbuzz_basic"
+for ((sourceSetId, main) in mapOf(
+    "fizzbuzz_basic" to "codes.som.anthony.oof4j.fizzbuzz.basic.BasicFizzBuzz"
 )) {
     project.sourceSets.create(sourceSetId) {
         val sourceSet = this
-        tasks.create<Jar>(sourceSetId) {
+        tasks.register<Jar>(sourceSetId) {
             archiveName = "$sourceSetId.jar"
+            manifest {
+                attributes(mapOf(
+                    "Main-Class" to main
+                ))
+            }
+
             from(sourceSet.output)
         }
     }
