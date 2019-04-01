@@ -1,6 +1,6 @@
 # FizzBuzz Basic
 
-This is the simplest example in `oof4jvm`
+This is the simplest example in `oof4j`
 
 It still raises one obfuscation snag - Method inheritance:
 The `BasicFizzBuzz` class implements `java.lang.Runnable`, and overrides its `run()V` method.
