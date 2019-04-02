@@ -14,7 +14,8 @@ repositories {
 
 for ((sourceSetId, main) in mapOf(
     "fizzbuzz_basic" to "codes.som.anthony.oof4j.fizzbuzz.basic.BasicFizzBuzz",
-    "hello_world" to "codes.som.anthony.oof4j.helloworld.HelloWorld"
+    "hello_world" to "codes.som.anthony.oof4j.helloworld.HelloWorld", 
+    "lambda_tester" to "codes.som.anthony.oof4j.lambda_tester.LambdaTester"
 )) {
     project.sourceSets.create(sourceSetId) {
         val sourceSet = this
