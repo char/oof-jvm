@@ -1,5 +1,7 @@
-/.gradle
 /.idea
+/.vscode
+
+/.gradle
 /build
 /out
 
