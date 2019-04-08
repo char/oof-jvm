@@ -17,7 +17,8 @@ for ((sourceSetId, main) in mapOf(
     "hello_world" to "codes.som.anthony.oof4j.helloworld.HelloWorld", 
     "anonymous_lambda" to "codes.som.anthony.oof4j.anonymouslambda.AnonymousLambda",
     "fizzbuzz_enterprise" to "codes.som.anthony.oof4j.fizzbuzz.enterprise.EnterpriseFizzBuzzCommandLineEntryPoint",
-    "enum_constants" to "codes.som.anthony.oof4j.enumconstants.EnumConstants"
+    "enum_constants" to "codes.som.anthony.oof4j.enumconstants.EnumConstants",
+    "interface_overlap" to "codes.som.anthony.oof4j.interfaceoverlap.InterfaceOverlap"
 )) {
     project.sourceSets.create(sourceSetId) {
         val sourceSet = this
