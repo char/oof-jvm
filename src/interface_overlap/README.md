@@ -19,8 +19,8 @@ public interface InterfaceB {
 }
 ```
 
-This means that when we have an implementing object:
+This means that when we have an implementing object, the incorrect method can be called:
 ```java
 Object interfaceOverlap = // ...
-((InterfaceB) interfaceOverlap).a(); // Uh oh!
+((InterfaceB) interfaceOverlap).a(); // An attempt to call 'methodB' actually invokes the implementation of 'methodA'
 ```
