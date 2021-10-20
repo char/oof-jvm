@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm") version "1.3.21"
 }
 
-group = "codes.som.anthony"
+group = "codes.som"
 version = "1.0.0"
 
 repositories {
@@ -13,12 +13,12 @@ repositories {
 }
 
 for ((sourceSetId, main) in mapOf(
-    "fizzbuzz_basic" to "codes.som.anthony.oof4j.fizzbuzz.basic.BasicFizzBuzz",
-    "hello_world" to "codes.som.anthony.oof4j.helloworld.HelloWorld", 
-    "anonymous_lambda" to "codes.som.anthony.oof4j.anonymouslambda.AnonymousLambda",
-    "fizzbuzz_enterprise" to "codes.som.anthony.oof4j.fizzbuzz.enterprise.EnterpriseFizzBuzzCommandLineEntryPoint",
-    "enum_constants" to "codes.som.anthony.oof4j.enumconstants.EnumConstants",
-    "interface_overlap" to "codes.som.anthony.oof4j.interfaceoverlap.InterfaceOverlap"
+    "fizzbuzz_basic" to "codes.som.oof4j.fizzbuzz.basic.BasicFizzBuzz",
+    "hello_world" to "codes.som.oof4j.helloworld.HelloWorld",
+    "anonymous_lambda" to "codes.som.oof4j.anonymouslambda.AnonymousLambda",
+    "fizzbuzz_enterprise" to "codes.som.oof4j.fizzbuzz.enterprise.EnterpriseFizzBuzzCommandLineEntryPoint",
+    "enum_constants" to "codes.som.oof4j.enumconstants.EnumConstants",
+    "interface_overlap" to "codes.som.oof4j.interfaceoverlap.InterfaceOverlap"
 )) {
     project.sourceSets.create(sourceSetId) {
         val sourceSet = this
